@@ -1,0 +1,16 @@
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore model & numpy files
+*.pkl
+*.npy
+
+# Ignore virtual environment
+venv_lstm/
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore system junk
+.DS_Store
