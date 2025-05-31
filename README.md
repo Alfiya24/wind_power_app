@@ -45,4 +45,30 @@ Src/
 ## API Reference
 OpenWeatherMap API for real-time wind speed data
 
+---
 
+## Getting Started
+To run this project locally:
+1. Clone the repository:
+```bash
+git clone https://github.com/Alfiya24/wind_power_app.git
+cd wind_power_app
+2. Create a virtual environment:
+python -m venv venv
+venv\Scripts\activate
+3. Install requirements:
+pip install -r requirements.txt
+4. Set your OpenWeatherMap API key inside wind_power_App.py:
+API_KEY = "YOUR_API_KEY"
+5. Run the wind_power_App:
+streamlit run App/wind_power_App.
+
+---
+
+## Preview
+[App Screenshot](assets/screenshot.png)
+
+---
+
+## License
+This repository is for educational and portfolio purposes only.
