@@ -47,6 +47,16 @@ OpenWeatherMap API for real-time wind speed data
 
 ---
 
+## Preview
+[App Screenshot](assets/screenshot.png)
+
+---
+
+## License
+This repository is for educational and portfolio purposes only.
+
+---
+
 ## Getting Started
 To run this project locally:
 1. Clone the repository:
@@ -64,11 +74,3 @@ API_KEY = "YOUR_API_KEY"
 streamlit run App/wind_power_App.
 
 ---
-
-## Preview
-[App Screenshot](assets/screenshot.png)
-
----
-
-## License
-This repository is for educational and portfolio purposes only.
