@@ -9,7 +9,7 @@ model = tf.keras.models.load_model("app/lstm_model.keras")
 scaler = joblib.load("app/lstm_scaler.pkl")
 
 # OpenWeatherMap API setup
-API_KEY = "f3abdb5e596d35dafa2e962facd872f8"
+API_KEY = "XXXXX"
 CITY = "Dubai"
 
 def get_wind_speed():

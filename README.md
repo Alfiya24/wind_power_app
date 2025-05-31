@@ -4,26 +4,45 @@ This project predicts wind turbine power output using an LSTM model trained on S
 
 ---
 
-## 🚀 Features
-
-- 📊 LSTM-based prediction using time-series weather data
-- 🔗 Real-time wind speed fetched from OpenWeatherMap
-- 📈 Streamlit app for live power forecasting
-- ✅ Scaled and inverse-transformed power predictions (in kW)
+## Features
+- LSTM model trained on time-series SCADA wind turbine data
+- Real-time wind speed fetched from OpenWeatherMap API
+- Scaled and inverse-transformed power predictions in kW
+- Live Streamlit interface for one-click predictions
+- Modular scripts for data cleaning, preprocessing, and model training
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 App/
 ├── lstm_model.keras # Trained LSTM model
 ├── lstm_scaler.pkl # Scaler for inverse-transform
-├── streamlit_app.py # Final Streamlit app
+├── streamlit_app.py # Streamlit app entry point
+
 Data/
-├── engineered_data.csv # Final dataset
-├── X_lstm.npy / y_lstm.npy
+├── scada_data.csv # Raw wind turbine data
+├── engineered_data.csv # Cleaned + transformed dataset
+├── X_lstm.npy / y_lstm.npy # Prepared time-series sequences
+
 Src/
-├── clean_data.py # Data cleaning
-├── feature_engineering.py # Feature extraction
-├── lstm_prepare_data.py # Sequence generation
-├── lstm_train_model.py # LSTM training
+├── clean_data.py # SCADA cleaning
+├── feature_engineering.py # Date/time transformation
+├── lstm_prepare_data.py # LSTM input preparation
+├── lstm_train_model.py # LSTM training & saving
+├── real_time_prediction.py # Live OpenWeatherMap integration
+
+---
+
+## Model Information
+- Type: LSTM (Long Short-Term Memory)
+- Input: Past 6 time steps of wind speed and theoretical power curve
+- Output: Predicted power output (kW)
+- Loss: MSE
+- Evaluation Metrics: RMSE, MAE, R²
+
+---
+
+## API Reference
+OpenWeatherMap API for real-time wind speed data
+
 
